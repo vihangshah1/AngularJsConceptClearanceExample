@@ -1,0 +1,15 @@
+{
+    "records": [
+        {
+            "name": "VIHANG",
+            "Education": "MCA",
+            "City": "Pune"
+        },
+        {
+            "name": "ADITI",
+            "Education": "BE",
+            "City": "Kodaikenal"
+        }
+    ]
+
+}

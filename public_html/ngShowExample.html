@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src = "controller/ngShowController.js" ></script>
+    </head>
+    <body ng-app="myApp" ng-controller="myCtrl">
+        <div >
+            <button ng-click="toggle()">Show Toggle</button>
+            <div class="message" ng-show="show == 'msg1'">
+                This is first Message
+            </div>
+            <div class="message" ng-show="show == 'msg2'">
+                This is Second Message
+            </div>
+        </div>
+    </body>
+</html>

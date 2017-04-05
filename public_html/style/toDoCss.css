@@ -22,3 +22,12 @@ span.done-true{
     display: block;
     margin:0 auto
 }
+span.done-true{
+    color:gray;
+    font-style: italic;
+    text-decoration: line-through;
+}
+span[contenteditable=true]{
+    background-color: gray;
+    padding: 3px;
+}

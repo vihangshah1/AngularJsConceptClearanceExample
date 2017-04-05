@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src = "controller/CustomFilterController.js" ></script>
+    </head>
+    <body ng-app="myApp">
+        <div ng-controller="filterCtrl">
+            Please Enter Only multiples of 100s in below textbox.<br><br>
+            <input type="text" ng-model="enteredAmount" /><br><br>
+            Your Entered {{enteredAmount}} and <span style="color:green;font-size: x-large">{{enteredAmount| hundredMulti}}.!</span>
+
+        </div>
+    </body>
+</html>

@@ -31,3 +31,11 @@ span[contenteditable=true]{
     background-color: gray;
     padding: 3px;
 }
+.note{
+    height: 25px;
+    width: 360px;
+   
+    display: block;
+    margin:0 auto;
+    color:red;
+}

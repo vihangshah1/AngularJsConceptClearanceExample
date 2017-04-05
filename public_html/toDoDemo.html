@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script src="lib/angular.min.js"></script>
+
+        <script src = "controller/toDoController.js" ></script>
+        <link href="style/toDoCss.css" type="StyleSheet/text" style="css"> 
+        <style>
+            span.done-true{
+                color:gray;
+                font-style: italic;
+                text-decoration: line-through;
+            }
+            span[contenteditable=true]{
+                background-color: gray;
+                padding: 3px;
+            }
+        </style>
+
+    </head>
+    <body ng-app="toDoApp" ng-controller="toDoCtrl">
+        <div>
+            <h1 align="center">To Do Task</h1>
+            <input class="enterTask" ng-keyup="searchEnter()" ng-model="task" type="text" >
+            <ul>
+                <li ng-repeat="onetask in TaskList track by $index">
+                    <input type="checkbox" ng-model="onetask.status" />
+
+                    <span contenteditable="false" ng-keydown="editAgain(onetask.taskMessage)" ng-dblclick="edit(onetask.taskMessage)" ng-model="onetask.taskMessage" class="done-{{onetask.status}}">
+                        {{onetask.taskMessage}}
+                    </span>
+
+
+                </li>
+
+            </ul>
+        </div>
+    </body>
+</html>
